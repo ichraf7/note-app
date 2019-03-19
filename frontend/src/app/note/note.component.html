@@ -1,0 +1,8 @@
+<div>welocome back</div>
+<div>
+    <input #input type="text" (keyup.enter)="createNote(input)">
+     
+<ul>
+   <li *ngFor="let note of notes">{{ note.title }}<button (click)="updateNote(note)">update</button></li> 
+</ul>
+</div>
